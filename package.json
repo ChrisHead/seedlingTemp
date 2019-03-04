@@ -1,0 +1,27 @@
+{
+  "name": "networks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "classify:plant": "ts-node classifyPlantTypes.ts",
+    "watch": "nodemon --watch '**/*.ts' --exec 'ts-node' src/app.ts",
+    "start": "ts-node src/app.ts",
+    "convert": "ts-node parseImages.ts"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^0.1.19",
+    "@tensorflow/tfjs-node-gpu": "^0.1.19",
+    "jpeg-js": "^0.3.4",
+    "pg-promise": "^8.5.1"
+  },
+  "devDependencies": {
+    "@types/jpeg-js": "^0.3.0",
+    "@types/node": "^10.12.2",
+    "nodemon": "^1.18.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
